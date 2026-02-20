@@ -1,3 +1,4 @@
+# commandes git
 git init
 
 git status
