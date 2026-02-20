@@ -16,3 +16,9 @@ h1{
     text-align: center;
     background: aqua;
 }
+p, li{
+    padding: 5px;
+}
+h2{
+    color: aquamarine;
+}

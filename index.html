@@ -15,26 +15,50 @@
         <ul>
           <li>git init ==>Création dossier cacher .git</li>
           <li>
-            Configiration
+           <mark>Configuration:</mark>
             <ul>
               <li>git config --user.name "alex"</li>
               <li>git config --user.email "alex@gmail.com"</li>
               <li>git config --list</li>
             </ul>
           </li>
-          <li>git staus ==> Connaitre l'état de notre dépôt</li>
+          <li>git status ==> Connaitre l'état de notre dépôt</li>
           <li>git add . ==> dosssier de travail vers zone d'index</li>
-          <li>git commit -m"" ==> Zone d'index vers dépôt local</li>
+          <li>git commit -m"Message" ==> Zone d'index vers dépôt local</li>
           <li>git reset => zonde d'index vers dossier de travail</li>
-          <li>git commit -m"message" ==> Zone d'index vers dépôt</li>         
         </ul>
         <hr>
-        <p>Afficher les modofications</p>
+        <h2>Afficher les modifications</h2>
         <ul>
             <li>git diff : Entre dossier du travail et la dernier commit (+ Ajout une ligne et - supprission d'une ligne)</li>
             <li>git diff --staged</li>
             <li>git diff --cached</li>
-        </ul>       
+            <li>git diff commit1 commit2</li>
+            <li>git diff --stat ==> Voir un résumé des changements</li>
+            <li>git diff --name-only ==> Voir seulement les noms des fichiers modifiés</li>
+        </ul>
+        <h2>Voyager dans l'historique</h2>
+        <p>
+            commite ==> [SHA-1 :40caractére en hexadécimale , Auteur, date de création, message, liste (SHA-1) des parents]
+        </p>
+        <pre>
+            Les tags:
+                master  : pointe toujours sur le dernier comites.
+                HEAD    : pointe sur master et peux être déplacer entre les commites.
+                Mon_tag : Tag fix identifiant une commite au lieu de son SHA-1 
+        </pre>
+        <ul>
+            <li>git log : La listes des commites(HEAD-&gt;master)</li>
+            <li>git log -1 : Affiche le dernier commite</li>
+            <li>git log --oneline : affiche l’historique des commits de façon condensée[hash court du commit et le premier ligne du message] </li>
+            <hr>
+            <li>git show SHA-1 : Affiche les détails d'un objet git</li>            
+        </ul>
+        <hr>
+        <ul>
+            <li>git chckout SHA-1 : sert à se positionner sur un commit précis en utilisant son identifiant (hash SHA-1).</li>
+        </ul> 
+            
       
       </section>
     </div>
