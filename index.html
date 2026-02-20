@@ -85,7 +85,26 @@
                     <li>Récuprer commites sur dépôt locale : git pull origin master</li>               
                 </ul>
             </li>
-        </ul> 
+        </ul>
+        <hr>
+        <ul>
+          <li><mark>git blame</mark> nom_fichier ==> identifier qui a modifié pour la dernière fois chaque ligne d’un fichier et à quel moment(^fbcdf8 le créateur du fichier).</li>
+          <li>git blame blame -L 10,20 index.html : Entre la linge 10 et 20</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>Si modification d 'un fichier et on veux passe une commite extérieur</li>
+          <li>git stash save "message" ==> (0) message dans stash</li>
+          <li>git stash pop 0 : passer du stash vers dossier du travail</li>
+          <li>git stash list</li>
+        </ul>
+        <h2>Merge</h2>
+        <p>
+          En Git, le merge sert à fusionner le contenu de deux branches. C’est une opération très courante pour intégrer des changements d’une branche dans une autre.
+        </p>
+        
+         
+
             
       
       </section>
